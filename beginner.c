@@ -1,38 +1,26 @@
 #include <stdio.h>
-#include <stdbool.h>
+#include <string.h>
+#include <conio.h>
 
-int main{
+int main() {
+  char username[15];
+  char password[12];
 
- // bool isHasCar = true;
- // int x = 0;
- // while (isHasCar) {
- //     printf("ведите цифру: ");
- //     scanf("%d", &x);
- //     if (x == 1)
- //        isHasCar = false;
+  printf("Enter your username:\n");
+  scanf("%s", &password);
+  
+  if(strcmp(username, "chaitu")==0)
+  {
+    if(strcmp(password, "123")==0)
+    {
+      printf("\nWelcom.Login Success!");
 
-    // float i = 1000;
-    // while(i > 10){
-    //     printf("%f\n", i);
-    //     i /= 20;
+    }else{
+printf("\nwrog password");
+  }
+}else{
+  printf("\nUser does not exist");
+}
 
-    // for(int = x; x > 12; x++){
-    //     if(x == 4)
-    //     break;
-    //     printf("%d\n", x);  
-
-    //     if(x % 2 == 0)
-    //        continue;
-
-// bool isHasCar = false;
-// da {
-//     printf("Yes\n");
-// }while(isHasCar); 
-//   // (isHasCar) = false
-//   // (!isHasCar) = true
- int arr[] = {5, 77, 8, 1, 17}
- for(int i = 0; i < 5; i++){
-     printf("%d\n", arr[i]);
-
-   return 0;
+return 0;
 }
